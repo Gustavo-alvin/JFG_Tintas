@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './produto.css'
-import skylack from '../../img/skylack.png'
-import maxirubber from '../../img/maxi-rubber.png'
+import skylack from '../../img/skylack2.png'
+import maxirubber from '../../img/maxi.jpg'
 import sherwin from '../../img/sherwin.png'
-import farben from '../../img/farben.png'
-import ppg from '../../img/ppg.png'
+import farben from '../../img/farben2.png'
+import ppg from '../../img/PPG_Logo.svg.png'
 import brazilian from '../../img/brazilian.png'
+import ScrollReveal from 'scrollreveal';
 
 const Produto = () => {
 
@@ -36,8 +37,21 @@ const Produto = () => {
         }
     ])
 
+    useEffect(() => {
+        
+        ScrollReveal().reveal('#reveal', {
+          distance: '50px',
+          duration: 1000,
+          easing: 'ease-in-out',
+          opacity: 0,
+          scale: 0.85,
+          origin: 'bottom',
+          reset: true,
+        });
+      }, []);
+
   return (
-    <section className="produto-container">
+    <section className="produto-container" id='reveal'>
     {produtos.map((produto) => (
         <article key={produto.id} className="produto-card">
             <img 

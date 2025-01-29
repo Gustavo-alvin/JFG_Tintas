@@ -45,18 +45,34 @@ table {
 html, body, #root {
 	height: 100%;
 	width: 100%;
+	font-family: poppins;
   }
 }
 
 /*Home*/
 .home {
-	height: 100vh; 
-  	width: 100%;
-	margin: 0 auto;
-	box-sizing: border-box;
-	overflow: auto;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: auto;
+  background-image: url('../src/img/background.png');
+  background-size: cover;
+  background-position: center;
 }
+.home::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Escurece a imagem sem afetar o texto */
+  }
 .container {
+	position: relative; /* Mantém os textos visíveis acima da sobreposição */
+	z-index: 1;
 	margin-top: 12.5rem;
 	text-align: center;
 }
@@ -68,14 +84,14 @@ html, body, #root {
 .titulo h1{
  font-size: 5.5rem;
 
- color: #301A89;
+ color: #ffffff;
 }
 
 
 .titulo dd{
 	font-size: 2rem;
 	margin-bottom: 5rem;
-	color: #2A2945;
+	color: #ffffff;
 }
 
 .btn-button{
@@ -119,8 +135,20 @@ html, body, #root {
    .tittle-about{
 	font-size: 3rem;
 	text-align: center;
+	margin-top: 5rem;
 	padding-bottom: 5rem;
    }
+
+   strong {
+	color: #626262;
+	font-weight: 800;
+   }
+
+   .text{
+	color: #808081;
+	font-weight: 400;
+   }
+   
 
    .container-about{
 	display: grid;
@@ -140,6 +168,13 @@ html, body, #root {
 	
    }
 
+   .imgs-about{
+	width: 18rem;
+	height: 15rem;
+	border-top-right-radius: 3.3rem;
+	border-bottom-left-radius: 3.3rem;
+   }
+
   .descripition{
 	width: 35rem;
 	margin: auto;
@@ -150,4 +185,26 @@ html, body, #root {
 	margin-top: 8rem;
 	text-align: center;
 	padding-bottom: 5rem;
+  }
+
+  @media (max-width: 850px) {
+	.container-about{
+		display: flex;
+		flex-direction: column;
+	   }
+
+	   .section-aboutUs {
+		display: flex;
+		flex-direction: column;
+		
+	   }
+
+	   .imgs{
+		display: none;
+		
+	   }
+
+	   
+	
+
   }
