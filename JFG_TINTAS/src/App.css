@@ -1,0 +1,153 @@
+*{
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body, #root {
+	height: 100%;
+	width: 100%;
+  }
+}
+
+/*Home*/
+.home {
+	height: 100vh; 
+  	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.container {
+	margin-top: 12.5rem;
+	text-align: center;
+}
+
+.titulo{
+	text-align: center;
+}
+
+.titulo h1{
+ font-size: 5.5rem;
+
+ color: #301A89;
+}
+
+
+.titulo dd{
+	font-size: 2rem;
+	margin-bottom: 5rem;
+	color: #2A2945;
+}
+
+.btn-button{
+	border: none;
+	color: #fff;
+	background-image: linear-gradient(30deg, #4A39EC, #758CFE);
+	border-radius: 20px;
+	background-size: 100% auto;
+	font-family: inherit;
+	font-size: 17px;
+	max-width: max-content;
+	padding: 0.6em 1.5em;
+	cursor: pointer;
+	
+}
+
+.btn-button:hover {
+	background-position: right center;
+	background-size: 200% auto;
+	-webkit-animation: pulse 2s infinite;
+	animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+	0% {
+	 box-shadow: 0 0 0 0 #05bada66;
+	}
+   
+	70% {
+	 box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+	}
+   
+	100% {
+	 box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+	}
+   }
+
+   /*ABOUT*/
+
+
+   .tittle-about{
+	font-size: 3rem;
+	text-align: center;
+	padding-bottom: 5rem;
+   }
+
+   .container-about{
+	display: grid;
+	grid-template-columns: 1fr;
+   }
+   .section-aboutUs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-bottom: 3rem;
+	
+   }
+
+   .imgs{
+	margin: auto;
+	display: grid;
+	
+   }
+
+  .descripition{
+	width: 35rem;
+	margin: auto;
+  }
+
+  .tittle-products {
+	font-size: 3rem;
+	margin-top: 8rem;
+	text-align: center;
+	padding-bottom: 5rem;
+  }
