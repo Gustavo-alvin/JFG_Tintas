@@ -188,23 +188,33 @@ html, body, #root {
   }
 
   @media (max-width: 850px) {
-	.container-about{
+	.container-about {
 		display: flex;
 		flex-direction: column;
-	   }
+		align-items: center;
+		text-align: center; 
+		padding: 0 1rem; 
+	}
 
-	   .section-aboutUs {
+	.section-aboutUs {
 		display: flex;
 		flex-direction: column;
-		
-	   }
+	}
 
-	   .imgs{
+	.imgs {
 		display: none;
-		
-	   }
+	}
 
-	   
-	
+	.descripition {
+		width: 100%;
+		max-width: 90%; 
+		padding: 1rem;
+		box-sizing: border-box; 
+	}
 
-  }
+	.tittle-about {
+		font-size: 2.5rem; 
+		margin-top: 3rem; 
+		padding-bottom: 3rem;
+	}
+}

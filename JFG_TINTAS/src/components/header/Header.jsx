@@ -21,7 +21,6 @@ const Header = () => {
         };
     }, []);
 
-    // Função para alternar o menu de navegação
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -32,13 +31,13 @@ const Header = () => {
                 <div className='logo'>
                     <h1>JFG TINTAS</h1>
                 </div>
-                {/* Ícone de hambúrguer com a classe para o "X" */}
+                
                 <div className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <span className='bar'></span>
                     <span className='bar'></span>
                     <span className='bar'></span>
                 </div>
-                {/* Menu de navegação */}
+               
                 <div className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
                     <ul>
                         <li className='nav-item'><a className='nav-link' href="#home">Home</a></li>
